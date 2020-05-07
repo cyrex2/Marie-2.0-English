@@ -22,29 +22,28 @@ Merhaba {},ben {}.Botu nasıl kullanacağını bilmiyorsan bu komuta tıkla /hel
 
 Ben  [bu harika kisi tarafindan](tg://user?id={}) geliştirildim.
 
-Bot  güncellemeleri hakkında bilgi kanalı: @SherlockSupportChannel & Destek Grubu: @SherlockSupportGroup.
+Bot  güncellemeleri hakkında bilgi kanalım: @SherlockSupportChannel & Destek Grubum: @SherlockSupportGroup.
 
 
 
-**Zeka seksiliğin yeni adı!**
+**Zeka seksiliğin yeni adı! #TeamDerUntergang**
 
 """
 
 HELP_STRINGS = """
 
-Hello! my name *{}*.
+Merhaba! ben *{}*.
 
-*Main* available commands:
+*Ana* komutlarım:
  - /start: Botu başlatır...
  - /help: yardım komutu....
  - /donate: Bağış komutudur!
  - /settings:
-   - in PM: To find out what SETTINGS you have set....
-   - in a group:
+   - burada: Hangi AYARLARI ayarladığınızı öğrenmek için kullanilir...
+   - bir sohbette: Ayar ayarlamak için kullanılır
 
 {}
-And the following:
-""".format(dispatcher.bot.first_name, "" if not ALLOW_EXCL else "\nAll of the following commands  / or ! can  be used...\n")
+""".format(dispatcher.bot.first_name, "" if not ALLOW_EXCL else "\nKomutları / veya ! işareti ile kullabilirsin...\n")
 
 DONATE_STRING = """https://bagis.unicefturk.org"""
 
