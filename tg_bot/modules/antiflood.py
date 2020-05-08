@@ -35,12 +35,12 @@ def check_flood(bot: Bot, update: Update) -> str:
 
     try:
         chat.kick_member(user.id)
-        msg.reply_text("dont disturb others you are No need for this group anymore...")
+        msg.reply_text("Başkalarını rahatsız edemezsin, artık sana ihtiyacımız yok...")
 
         return "<b>{}:</b>" \
-               "\n#BANNED" \
-               "\n<b>User:</b> {}" \
-               "\nFlooded the group.".format(html.escape(chat.title),
+               "\n#Banlandı" \
+               "\n<b>Kullanıcı:</b> {}" \
+               "\nGrupta flood yaptı.".format(html.escape(chat.title),
                                              mention_html(user.id, user.first_name))
 
     except BadRequest:
