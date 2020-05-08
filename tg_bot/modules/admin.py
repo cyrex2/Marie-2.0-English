@@ -37,7 +37,7 @@ def promote(bot: Bot, update: Update, args: List[str]) -> str:
         return ""
 
     if user_id == bot.id:
-        message.reply_text("Kendimi yetkimi yetkilendiremiyorum! Yapacak başka birini bul.")
+        message.reply_text("Kendimi yetkilendiremiyorum! Yapacak başka birini bul.")
         return ""
 
     # set same perms as bot - bot can't assign higher perms than itself!
