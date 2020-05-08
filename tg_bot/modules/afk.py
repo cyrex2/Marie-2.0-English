@@ -22,7 +22,7 @@ def afk(bot: Bot, update: Update):
         reason = ""
 
     sql.set_afk(update.effective_user.id, reason)
-    update.effective_message.reply_text("{} is away from the keyboard ! ".format(update.effective_user.first_name))
+    update.effective_message.reply_text("{} artık meşgul! ".format(update.effective_user.first_name))
 
 
 @run_async
@@ -34,7 +34,7 @@ def no_longer_afk(bot: Bot, update: Update):
 
     res = sql.rm_afk(user.id)
     if res:
-        update.effective_message.reply_text("{} Not far from the keyboard now !".format(update.effective_user.first_name))
+        update.effective_message.reply_text("{} artık meşgul değil!".format(update.effective_user.first_name))
 
 
 @run_async
@@ -61,17 +61,17 @@ def reply_afk(bot: Bot, update: Update):
             if sql.is_afk(user_id):
                 user = sql.check_afk_status(user_id)
                 if not user.reason:
-                    res = "{} is away from the keyboard ! reason :\n{} ".format(fst_name)
+                    res = "{} artık meşgul! sebep:\n{} ".format(fst_name)
                 else:
-                    res = "{} is away from the keyboard ! reason :\n{}. ".format(fst_name, user.reason)
+                    res = "{} artık meşgul! sebep:\n{}. ".format(fst_name, user.reason)
                 message.reply_text(res)
 
 
 __help__ = """
- - /afk <reason>: mark yourself as AFK.
- - brb <reason>: same as the afk command - but not a command.
+ - /afk <sebebi>: Kendini AFK olarak göster.
+ - brb <reason>: afk komutuyla aynı - ancak bir komut değil.
 
-When marked as AFK, any mentions will be replied to with a message to say you're not available!
+AFK olarak işaretlendiğinde herhangi bir yanıtı, uygun olmadığınızı belirten bir mesajla cevaplandırılacaktır!
 """
 
 __mod_name__ = "AFK"
