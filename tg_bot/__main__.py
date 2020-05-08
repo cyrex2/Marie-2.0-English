@@ -18,11 +18,12 @@ from tg_bot.modules.helper_funcs.chat_status import is_user_admin
 from tg_bot.modules.helper_funcs.misc import paginate_modules
 
 PM_START_TEXT = """
-Merhaba {},ben {}.Botu nasıl kullanacağını bilmiyorsan bu komuta tıkla /help ... 
+Merhaba {}, Ben {}.
+Botu nasıl kullanacağını bilmiyorsan bu komuta tıkla /help ... 
 
-Ben  [bu harika kisi tarafindan](tg://user?id={}) geliştirildim.
+Ben  [bu harika kişi tarafından](tg://user?id={}) geliştirildim.
 
-Bot  güncellemeleri hakkında bilgi kanalım: @SherlockSupportChannel & Destek Grubum: @SherlockSupportGroup.
+Kanalım: @SherlockSupportChannel & Destek Grubum: @SherlockSupportGroup.
 
 
 
@@ -45,7 +46,7 @@ Merhaba! ben *{}*.
 {}
 """.format(dispatcher.bot.first_name, "" if not ALLOW_EXCL else "\nKomutları / veya ! işareti ile kullabilirsin...\n")
 
-DONATE_STRING = """https://bagis.unicefturk.org"""
+DONATE_STRING = """Bana destek olmana gerek yok dostum, işte yardima muhtac olanlar 👉  https://bagis.unicefturk.org"""
 
 IMPORTED = {}
 MIGRATEABLE = []
