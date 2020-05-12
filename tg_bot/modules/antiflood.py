@@ -91,7 +91,7 @@ def set_flood(bot: Bot, update: Update, args: List[str]) -> str:
 
         else:
             message.reply_text("Ne dediğini anlamıyorum...🤷‍♂") 
-bir numara kullan ya da Yes/No ifadesi kullan")
+                              ("bir numara kullan ya da Yes/No ifadesi kullan")
 
     return ""
 
