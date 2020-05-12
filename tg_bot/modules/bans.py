@@ -440,13 +440,13 @@ def runban(bot: Bot, update: Update, args: List[str]):
 
 
 __help__ = """
- - /kickme: kicks the user who issued the command
+ - /kickme: Sizi bu sohbetten tekmelemi sağlar
 
 *Admin only:*
- - /ban <userhandle>: bans a user. (via handle, or reply)
- - /tban <userhandle> x(m/h/d): bans a user for x time. (via handle, or reply). m = minutes, h = hours, d = days.
- - /unban <userhandle>: unbans a user. (via handle, or reply)
- - /kick <userhandle>: kicks a user, (via handle, or reply)
+ - /ban <id/kullanıcıadı/yanıt>: Kullanıcıyı yasaklar
+ - /tban <id/kullanıcıadı/yanıt> x(m/h/d): Kullanıcıyı belirtilen süre boyunca yasaklar. m = dakika, h = saat, d = gün.
+ - /unban <id/kullanıcıadı/yanıt>: Kullanıcının yasağını kaldırır
+ - /kick <id/kullanıcıadı/yanıt>: Kullanıcıyi gruptan uzaklaştırır
 """
 
 __mod_name__ = "Bans"
