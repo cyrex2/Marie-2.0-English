@@ -90,8 +90,7 @@ def set_flood(bot: Bot, update: Update, args: List[str]) -> str:
                                                                     mention_html(user.id, user.first_name), amount)
 
         else:
-            message.reply_text("Ne dediğini anlamıyorum...🤷‍♂") 
-                              ("bir numara kullan ya da Yes/No ifadesi kullan")
+            message.reply_text("Ne dediğini anlamıyorum...Bir numara kullan ya da Yes/No ifadesi kullan")
 
     return ""
 
